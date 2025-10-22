@@ -1,0 +1,522 @@
+//  [
+//   {
+//     "ami" = "ami-0341d95f75f311023"
+//     "arn" = "arn:aws:ec2:us-east-1:881010748578:instance/i-06af6b15dc99c3e60"
+//     "associate_public_ip_address" = true
+//     "availability_zone" = "us-east-1d"
+//     "capacity_reservation_specification" = tolist([
+//       {
+//         "capacity_reservation_preference" = "open"
+//         "capacity_reservation_target" = tolist([])
+//       },
+//     ])
+//     "cpu_options" = tolist([
+//       {
+//         "amd_sev_snp" = ""
+//         "core_count" = 1
+//         "threads_per_core" = 2
+//       },
+//     ])
+//     "credit_specification" = tolist([
+//       {
+//         "cpu_credits" = "unlimited"
+//       },
+//     ])
+//     "disable_api_stop" = false
+//     "disable_api_termination" = false
+//     "ebs_block_device" = toset([])
+//     "ebs_optimized" = false
+//     "enable_primary_ipv6" = tobool(null)
+//     "enclave_options" = tolist([
+//       {
+//         "enabled" = false
+//       },
+//     ])
+//     "ephemeral_block_device" = toset([])
+//     "force_destroy" = false
+//     "get_password_data" = false
+//     "hibernation" = false
+//     "host_id" = ""
+//     "host_resource_group_arn" = tostring(null)
+//     "iam_instance_profile" = ""
+//     "id" = "i-06af6b15dc99c3e60"
+//     "instance_initiated_shutdown_behavior" = "stop"
+//     "instance_lifecycle" = ""
+//     "instance_market_options" = tolist([])
+//     "instance_state" = "running"
+//     "instance_type" = "t3.micro"
+//     "ipv6_address_count" = 0
+//     "ipv6_addresses" = tolist([])
+//     "key_name" = ""
+//     "launch_template" = tolist([])
+//     "maintenance_options" = tolist([
+//       {
+//         "auto_recovery" = "default"
+//       },
+//     ])
+//     "metadata_options" = tolist([
+//       {
+//         "http_endpoint" = "enabled"
+//         "http_protocol_ipv6" = "disabled"
+//         "http_put_response_hop_limit" = 2
+//         "http_tokens" = "required"
+//         "instance_metadata_tags" = "disabled"
+//       },
+//     ])
+//     "monitoring" = false
+//     "network_interface" = toset([])
+//     "outpost_arn" = ""
+//     "password_data" = ""
+//     "placement_group" = ""
+//     "placement_group_id" = ""
+//     "placement_partition_number" = 0
+//     "primary_network_interface" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "network_interface_id" = "eni-0e3f4b0c95a13733f"
+//       },
+//     ])
+//     "primary_network_interface_id" = "eni-0e3f4b0c95a13733f"
+//     "private_dns" = "ip-172-31-16-246.ec2.internal"
+//     "private_dns_name_options" = tolist([
+//       {
+//         "enable_resource_name_dns_a_record" = false
+//         "enable_resource_name_dns_aaaa_record" = false
+//         "hostname_type" = "ip-name"
+//       },
+//     ])
+//     "private_ip" = "172.31.16.246"
+//     "public_dns" = "ec2-3-83-234-223.compute-1.amazonaws.com"
+//     "public_ip" = "3.83.234.223"
+//     "region" = "us-east-1"
+//     "root_block_device" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "device_name" = "/dev/xvda"
+//         "encrypted" = false
+//         "iops" = 3000
+//         "kms_key_id" = ""
+//         "tags" = tomap({})
+//         "tags_all" = tomap({})
+//         "throughput" = 125
+//         "volume_id" = "vol-0e27c2069d29d2455"
+//         "volume_size" = 8
+//         "volume_type" = "gp3"
+//       },
+//     ])
+//     "secondary_private_ips" = toset([])
+//     "security_groups" = toset([
+//       "not-changable",
+//     ])
+//     "source_dest_check" = true
+//     "spot_instance_request_id" = ""
+//     "subnet_id" = "subnet-0e8ae097e555ab805"
+//     "tags" = tomap({
+//       "Name" = "websphere"
+//       "Terraform" = "true"
+//     })
+//     "tags_all" = tomap({
+//       "Name" = "websphere"
+//       "Terraform" = "true"
+//     })
+//     "tenancy" = "default"
+//     "timeouts" = null /* object */
+//     "user_data" = tostring(null)
+//     "user_data_base64" = tostring(null)
+//     "user_data_replace_on_change" = false
+//     "volume_tags" = tomap(null) /* of string */
+//     "vpc_security_group_ids" = toset([
+//       "sg-0e82eb1fc96d1a299",
+//     ])
+//   },
+//   {
+//     "ami" = "ami-0341d95f75f311023"
+//     "arn" = "arn:aws:ec2:us-east-1:881010748578:instance/i-0a6023b421e498cbd"
+//     "associate_public_ip_address" = true
+//     "availability_zone" = "us-east-1d"
+//     "capacity_reservation_specification" = tolist([
+//       {
+//         "capacity_reservation_preference" = "open"
+//         "capacity_reservation_target" = tolist([])
+//       },
+//     ])
+//     "cpu_options" = tolist([
+//       {
+//         "amd_sev_snp" = ""
+//         "core_count" = 1
+//         "threads_per_core" = 2
+//       },
+//     ])
+//     "credit_specification" = tolist([
+//       {
+//         "cpu_credits" = "unlimited"
+//       },
+//     ])
+//     "disable_api_stop" = false
+//     "disable_api_termination" = false
+//     "ebs_block_device" = toset([])
+//     "ebs_optimized" = false
+//     "enable_primary_ipv6" = tobool(null)
+//     "enclave_options" = tolist([
+//       {
+//         "enabled" = false
+//       },
+//     ])
+//     "ephemeral_block_device" = toset([])
+//     "force_destroy" = false
+//     "get_password_data" = false
+//     "hibernation" = false
+//     "host_id" = ""
+//     "host_resource_group_arn" = tostring(null)
+//     "iam_instance_profile" = ""
+//     "id" = "i-0a6023b421e498cbd"
+//     "instance_initiated_shutdown_behavior" = "stop"
+//     "instance_lifecycle" = ""
+//     "instance_market_options" = tolist([])
+//     "instance_state" = "running"
+//     "instance_type" = "t3.micro"
+//     "ipv6_address_count" = 0
+//     "ipv6_addresses" = tolist([])
+//     "key_name" = ""
+//     "launch_template" = tolist([])
+//     "maintenance_options" = tolist([
+//       {
+//         "auto_recovery" = "default"
+//       },
+//     ])
+//     "metadata_options" = tolist([
+//       {
+//         "http_endpoint" = "enabled"
+//         "http_protocol_ipv6" = "disabled"
+//         "http_put_response_hop_limit" = 2
+//         "http_tokens" = "required"
+//         "instance_metadata_tags" = "disabled"
+//       },
+//     ])
+//     "monitoring" = false
+//     "network_interface" = toset([])
+//     "outpost_arn" = ""
+//     "password_data" = ""
+//     "placement_group" = ""
+//     "placement_group_id" = ""
+//     "placement_partition_number" = 0
+//     "primary_network_interface" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "network_interface_id" = "eni-07d190f06f2ec9777"
+//       },
+//     ])
+//     "primary_network_interface_id" = "eni-07d190f06f2ec9777"
+//     "private_dns" = "ip-172-31-31-190.ec2.internal"
+//     "private_dns_name_options" = tolist([
+//       {
+//         "enable_resource_name_dns_a_record" = false
+//         "enable_resource_name_dns_aaaa_record" = false
+//         "hostname_type" = "ip-name"
+//       },
+//     ])
+//     "private_ip" = "172.31.31.190"
+//     "public_dns" = "ec2-13-222-180-140.compute-1.amazonaws.com"
+//     "public_ip" = "13.222.180.140"
+//     "region" = "us-east-1"
+//     "root_block_device" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "device_name" = "/dev/xvda"
+//         "encrypted" = false
+//         "iops" = 3000
+//         "kms_key_id" = ""
+//         "tags" = tomap({})
+//         "tags_all" = tomap({})
+//         "throughput" = 125
+//         "volume_id" = "vol-0ebc88e07114aae3c"
+//         "volume_size" = 8
+//         "volume_type" = "gp3"
+//       },
+//     ])
+//     "secondary_private_ips" = toset([])
+//     "security_groups" = toset([
+//       "not-changable",
+//     ])
+//     "source_dest_check" = true
+//     "spot_instance_request_id" = ""
+//     "subnet_id" = "subnet-0e8ae097e555ab805"
+//     "tags" = tomap({
+//       "Name" = "weblogic"
+//       "Terraform" = "true"
+//     })
+//     "tags_all" = tomap({
+//       "Name" = "weblogic"
+//       "Terraform" = "true"
+//     })
+//     "tenancy" = "default"
+//     "timeouts" = null /* object */
+//     "user_data" = tostring(null)
+//     "user_data_base64" = tostring(null)
+//     "user_data_replace_on_change" = false
+//     "volume_tags" = tomap(null) /* of string */
+//     "vpc_security_group_ids" = toset([
+//       "sg-0e82eb1fc96d1a299",
+//     ])
+//   },
+//   {
+//     "ami" = "ami-0341d95f75f311023"
+//     "arn" = "arn:aws:ec2:us-east-1:881010748578:instance/i-02229163c5e8edb29"
+//     "associate_public_ip_address" = true
+//     "availability_zone" = "us-east-1d"
+//     "capacity_reservation_specification" = tolist([
+//       {
+//         "capacity_reservation_preference" = "open"
+//         "capacity_reservation_target" = tolist([])
+//       },
+//     ])
+//     "cpu_options" = tolist([
+//       {
+//         "amd_sev_snp" = ""
+//         "core_count" = 1
+//         "threads_per_core" = 2
+//       },
+//     ])
+//     "credit_specification" = tolist([
+//       {
+//         "cpu_credits" = "unlimited"
+//       },
+//     ])
+//     "disable_api_stop" = false
+//     "disable_api_termination" = false
+//     "ebs_block_device" = toset([])
+//     "ebs_optimized" = false
+//     "enable_primary_ipv6" = tobool(null)
+//     "enclave_options" = tolist([
+//       {
+//         "enabled" = false
+//       },
+//     ])
+//     "ephemeral_block_device" = toset([])
+//     "force_destroy" = false
+//     "get_password_data" = false
+//     "hibernation" = false
+//     "host_id" = ""
+//     "host_resource_group_arn" = tostring(null)
+//     "iam_instance_profile" = ""
+//     "id" = "i-02229163c5e8edb29"
+//     "instance_initiated_shutdown_behavior" = "stop"
+//     "instance_lifecycle" = ""
+//     "instance_market_options" = tolist([])
+//     "instance_state" = "running"
+//     "instance_type" = "t3.micro"
+//     "ipv6_address_count" = 0
+//     "ipv6_addresses" = tolist([])
+//     "key_name" = ""
+//     "launch_template" = tolist([])
+//     "maintenance_options" = tolist([
+//       {
+//         "auto_recovery" = "default"
+//       },
+//     ])
+//     "metadata_options" = tolist([
+//       {
+//         "http_endpoint" = "enabled"
+//         "http_protocol_ipv6" = "disabled"
+//         "http_put_response_hop_limit" = 2
+//         "http_tokens" = "required"
+//         "instance_metadata_tags" = "disabled"
+//       },
+//     ])
+//     "monitoring" = false
+//     "network_interface" = toset([])
+//     "outpost_arn" = ""
+//     "password_data" = ""
+//     "placement_group" = ""
+//     "placement_group_id" = ""
+//     "placement_partition_number" = 0
+//     "primary_network_interface" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "network_interface_id" = "eni-03121475550b575f3"
+//       },
+//     ])
+//     "primary_network_interface_id" = "eni-03121475550b575f3"
+//     "private_dns" = "ip-172-31-25-86.ec2.internal"
+//     "private_dns_name_options" = tolist([
+//       {
+//         "enable_resource_name_dns_a_record" = false
+//         "enable_resource_name_dns_aaaa_record" = false
+//         "hostname_type" = "ip-name"
+//       },
+//     ])
+//     "private_ip" = "172.31.25.86"
+//     "public_dns" = "ec2-3-208-19-69.compute-1.amazonaws.com"
+//     "public_ip" = "3.208.19.69"
+//     "region" = "us-east-1"
+//     "root_block_device" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "device_name" = "/dev/xvda"
+//         "encrypted" = false
+//         "iops" = 3000
+//         "kms_key_id" = ""
+//         "tags" = tomap({})
+//         "tags_all" = tomap({})
+//         "throughput" = 125
+//         "volume_id" = "vol-016ea0eb8f96cebdf"
+//         "volume_size" = 8
+//         "volume_type" = "gp3"
+//       },
+//     ])
+//     "secondary_private_ips" = toset([])
+//     "security_groups" = toset([
+//       "not-changable",
+//     ])
+//     "source_dest_check" = true
+//     "spot_instance_request_id" = ""
+//     "subnet_id" = "subnet-0e8ae097e555ab805"
+//     "tags" = tomap({
+//       "Name" = "mysql"
+//       "Terraform" = "true"
+//     })
+//     "tags_all" = tomap({
+//       "Name" = "mysql"
+//       "Terraform" = "true"
+//     })
+//     "tenancy" = "default"
+//     "timeouts" = null /* object */
+//     "user_data" = tostring(null)
+//     "user_data_base64" = tostring(null)
+//     "user_data_replace_on_change" = false
+//     "volume_tags" = tomap(null) /* of string */
+//     "vpc_security_group_ids" = toset([
+//       "sg-0e82eb1fc96d1a299",
+//     ])
+//   },
+//   {
+//     "ami" = "ami-0341d95f75f311023"
+//     "arn" = "arn:aws:ec2:us-east-1:881010748578:instance/i-0fd8252ed55ad320c"
+//     "associate_public_ip_address" = true
+//     "availability_zone" = "us-east-1d"
+//     "capacity_reservation_specification" = tolist([
+//       {
+//         "capacity_reservation_preference" = "open"
+//         "capacity_reservation_target" = tolist([])
+//       },
+//     ])
+//     "cpu_options" = tolist([
+//       {
+//         "amd_sev_snp" = ""
+//         "core_count" = 1
+//         "threads_per_core" = 2
+//       },
+//     ])
+//     "credit_specification" = tolist([
+//       {
+//         "cpu_credits" = "unlimited"
+//       },
+//     ])
+//     "disable_api_stop" = false
+//     "disable_api_termination" = false
+//     "ebs_block_device" = toset([])
+//     "ebs_optimized" = false
+//     "enable_primary_ipv6" = tobool(null)
+//     "enclave_options" = tolist([
+//       {
+//         "enabled" = false
+//       },
+//     ])
+//     "ephemeral_block_device" = toset([])
+//     "force_destroy" = false
+//     "get_password_data" = false
+//     "hibernation" = false
+//     "host_id" = ""
+//     "host_resource_group_arn" = tostring(null)
+//     "iam_instance_profile" = ""
+//     "id" = "i-0fd8252ed55ad320c"
+//     "instance_initiated_shutdown_behavior" = "stop"
+//     "instance_lifecycle" = ""
+//     "instance_market_options" = tolist([])
+//     "instance_state" = "running"
+//     "instance_type" = "t3.micro"
+//     "ipv6_address_count" = 0
+//     "ipv6_addresses" = tolist([])
+//     "key_name" = ""
+//     "launch_template" = tolist([])
+//     "maintenance_options" = tolist([
+//       {
+//         "auto_recovery" = "default"
+//       },
+//     ])
+//     "metadata_options" = tolist([
+//       {
+//         "http_endpoint" = "enabled"
+//         "http_protocol_ipv6" = "disabled"
+//         "http_put_response_hop_limit" = 2
+//         "http_tokens" = "required"
+//         "instance_metadata_tags" = "disabled"
+//       },
+//     ])
+//     "monitoring" = false
+//     "network_interface" = toset([])
+//     "outpost_arn" = ""
+//     "password_data" = ""
+//     "placement_group" = ""
+//     "placement_group_id" = ""
+//     "placement_partition_number" = 0
+//     "primary_network_interface" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "network_interface_id" = "eni-02d8a8cce487531ad"
+//       },
+//     ])
+//     "primary_network_interface_id" = "eni-02d8a8cce487531ad"
+//     "private_dns" = "ip-172-31-26-224.ec2.internal"
+//     "private_dns_name_options" = tolist([
+//       {
+//         "enable_resource_name_dns_a_record" = false
+//         "enable_resource_name_dns_aaaa_record" = false
+//         "hostname_type" = "ip-name"
+//       },
+//     ])
+//     "private_ip" = "172.31.26.224"
+//     "public_dns" = "ec2-98-81-204-37.compute-1.amazonaws.com"
+//     "public_ip" = "98.81.204.37"
+//     "region" = "us-east-1"
+//     "root_block_device" = tolist([
+//       {
+//         "delete_on_termination" = true
+//         "device_name" = "/dev/xvda"
+//         "encrypted" = false
+//         "iops" = 3000
+//         "kms_key_id" = ""
+//         "tags" = tomap({})
+//         "tags_all" = tomap({})
+//         "throughput" = 125
+//         "volume_id" = "vol-02ca1fa4f9b92cbdd"
+//         "volume_size" = 8
+//         "volume_type" = "gp3"
+//       },
+//     ])
+//     "secondary_private_ips" = toset([])
+//     "security_groups" = toset([
+//       "not-changable",
+//     ])
+//     "source_dest_check" = true
+//     "spot_instance_request_id" = ""
+//     "subnet_id" = "subnet-0e8ae097e555ab805"
+//     "tags" = tomap({
+//       "Name" = "MLOps_server"
+//       "Terraform" = "true"
+//     })
+//     "tags_all" = tomap({
+//       "Name" = "MLOps_server"
+//       "Terraform" = "true"
+//     })
+//     "tenancy" = "default"
+//     "timeouts" = null /* object */
+//     "user_data" = tostring(null)
+//     "user_data_base64" = tostring(null)
+//     "user_data_replace_on_change" = false
+//     "volume_tags" = tomap(null) /* of string */
+//     "vpc_security_group_ids" = toset([
+//       "sg-0e82eb1fc96d1a299",
+//     ])
+//   },
+// ]

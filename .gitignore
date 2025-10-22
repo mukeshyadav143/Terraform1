@@ -1,0 +1,45 @@
+# Terraform local cache & state
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Crash logs
+crash.log
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Plan files
+*.tfplan
+
+# Terraform CLI config
+.terraformrc
+terraform.rc
+
+# Terraform state files
+*.tfstate
+.tfstate.
+
+# Crash log files
+crash.log
+
+# Sensitive variable files (if not managed separately)
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform plan files
+*.tfplan
+
+# Terraform CLI configuration files
+.terraformrc
+terraform.rc
+
+# Provider lock files (consider committing if consistent provider versions are critical)
+.terraform.lock.hcl 
