@@ -1,12 +1,31 @@
 resource "aws_instance" "terraform" {
-  ami           = "ami-0341d95f75f311023"
-  instance_type = "t3.micro"
+  for_each = var.instances
+  ami                    = var.ami_id
+  instance_type          = each.value
   vpc_security_group_ids = [aws_security_group.allow_all.id]
-  tags = {
-    Name      = "data_source"
-    Terraform = "true"
+  tags = merge(
+    var.ec2_tags,
+    {
+      Name = each.key
+    }
+  )
+
+  connection {
+    type        = "ssh"
+    user        = "ec2-user"
+    password    = "DevOps321"
+    host        = self.public_ip
+  }
+
+  provisioner "remote-exec" {
+    inline = [
+      "sudo dnf install nginx -y",
+      "sudo systemctl start nginx",
+      "sudo systemctl enable nginx"
+    ]
   }
 }
+
 
 resource "aws_security_group" "allow_all" {
   name = "allow-all"
