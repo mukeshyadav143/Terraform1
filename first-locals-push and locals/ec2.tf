@@ -14,9 +14,7 @@ provisioner "local-exec" {
 }
 }
 
-
-
-# Below code will creae the security group named ALLOWING-ALL-GROUPS
+# Below code will create the security group named ALLOWING-ALL-GROUPS
 resource "aws_security_group" "newly-created-group" {
   name   = "${local.common_name}-allow-all"
 
