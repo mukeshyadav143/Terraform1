@@ -1,10 +1,5 @@
 variable "instances" {
-#   default = [ "mongodb", "redis", "frontend" ]
-     default = {
-         devOps = "t2.medium"
-         MLOps = "t2.micro"
-         LLMOps = "t2.small"
-      }
+   default = [ "frontend" ]
  }
 
    variable "ami_id" {
